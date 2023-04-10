@@ -1,0 +1,723 @@
+
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** INICIO **/
+.inicio {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/turismo.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.inicio .navBar {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        width: 100%;
+        height: 70px;
+        background-color: #159895;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+}
+.navBar .logo{
+  padding-left: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: right;
+  
+}
+.ul{ 
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.li {
+   padding: 6px;
+}
+.li a{
+  letter-spacing: 1.5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  font-weight: bold;
+  display: block;
+}
+
+.li :hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000000;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+ .burbuja{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #1598965d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px #888;
+  animation: escalar 1s ease-in-out infinite alternate;
+}
+
+@keyframes escalar{
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width:767px){
+  .inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/turismo.jpg');
+    background-position: -270px 10px ;
+  }
+  .navBar{
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .logo{
+    margin-bottom: 20px;
+  }
+  .ul{
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  .li{
+    padding: 10px 0;
+    display: none;
+  }
+  .burbuja{
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+}
+
+
+.titulo-fondo{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.viajes{
+  width: 100%;
+  height: 100vh;
+  background-color: #159895;
+
+}
+
+.caja-viajes{
+ width: 100%;
+ height: 70px;
+ background-color: #159895;
+ display: flex;
+ justify-content: center;
+ border-bottom: 1px solid white;
+ 
+}
+
+
+.caja-viajes h1{
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.todas-cajas{
+display: flex;
+margin: 10px;
+justify-content: space-between;
+align-items: center;
+}
+/* CAJA 1- PARIS */
+.caja{
+width: 300px;
+height: 500px;
+float: left;
+background-image: url('/img/paris.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 15px;
+box-shadow:  0px 0px 4px white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.caja:hover{
+  width: 310px;
+  height: 510px;
+}
+
+.caja h1{
+  padding: 5px;
+  margin-top: 12px;
+  font-size: 20px;
+  display: block;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.caja h2{
+  text-align: center;
+  padding-top: 230px;
+  color: white;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+.caja p{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  
+}
+.caja h3{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+/* CIERRE FINAL DE CAJA 1 - PARIS */ 
+/* APERTURA CAJA 2 - ROMA */ 
+.caja2{
+  width: 300px;
+  height: 500px;
+  float: left;
+  background-image: url('/img/roma.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow:  0px 0px 4px white;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  
+  .caja2:hover{
+    width: 310px;
+    height: 510px;
+  }
+  .caja2 h1{
+    padding: 5px;
+    margin-top: 12px;
+    font-size: 20px;
+    display: block;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .caja2 h2{
+    text-align: center;
+    padding-top: 230px;
+    color: white;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }
+  .caja2 p{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    
+  }
+  .caja2 h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  /* CIERRE CAJA 2 - ROMA */ 
+  /* APERTURA CAJA 3 - AMSTERDAM */ 
+  .caja3{
+    width: 300px;
+    height: 500px;
+    float: left;
+    background-image: url('/img/amster.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow:  0px 0px 4px white;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+    
+    .caja3:hover{
+      width: 310px;
+      height: 510px;
+    }
+    .caja3 h1{
+      padding: 5px;
+      margin-top: 12px;
+      font-size: 20px;
+      display: block;
+      color: white;
+      letter-spacing: 1px;
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .caja3 h2{
+      text-align: center;
+      padding-top: 230px;
+      color: white;
+      font-size: 25px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+    }
+    .caja3 p{
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: white;
+      
+    }
+    .caja3 h3{
+      color: white;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    /* CIERRE CAJA 3 - AMSTERDAM */ 
+    /* CIERRA CAJA 4 - NEW YORK */ 
+
+    .caja4{
+      width: 300px;
+      height: 500px;
+      float: float;
+      background-image: url('/img/nw.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      box-shadow:  0px 0px 4px white;
+      cursor: pointer;
+      transition: 0.3s;
+      }
+      
+      .caja4:hover{
+        width: 310px;
+        height: 510px;
+      }
+      .caja4 h1{
+        padding: 5px;
+        margin-top: 12px;
+        font-size: 20px;
+        display: block;
+        color: white;
+        letter-spacing: 1px;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .caja4 h2{
+        text-align: center;
+        padding-top: 230px;
+        color: white;
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+      }
+      .caja4 p{
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        
+      }
+      .caja4 h3{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+      }
+
+
+/** Nuestra Organizacion**/
+.nuestra-organizacion {
+  width: 100%;
+  height: 100vh;
+  background-color: #159895;
+}
+.titulo{
+  width: 100%;
+  height: 70px;
+  background-color: #159895;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.linea {
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+}
+
+.titulo h1{
+  display: flex;
+  color: white;
+  font-size: 30px;
+  align-items: center;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.caja-org{
+width: 50%;
+height: 560px;
+float: left;
+margin-top: 15px;
+margin-left: 15px;
+margin-right: 15px;
+background-image: url('/img/nOrg.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+
+.nuestra-organizacion p {
+  margin: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+
+/** Fomulario  Contacto**/
+
+#contacto {
+  padding: 40px 0;
+  color: rgb(0, 0, 0);
+}
+#contacto h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  background-image: url();
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#contact-form label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="text"], #contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form input[type="submit"]:hover{
+  background-color: rgb(126, 189, 32);
+}
+
+@media (max-width:768px){
+  #contact-form{
+    padding:10px
+  }
+}
+
+
+
+
+.footer{
+  background-color:rgb(0,0,0,0.7);
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+.button {
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  text-align:center;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  display:block;
+  color: #FFF;
+  background: #7F8C8D;
+   padding: 5px 5px;
+  white-space: nowrap;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 100px;
+  margin: 10px 80px 10px 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+
+.color{
+
+background:  #159895 ;
+box-shadow: 0px 3px 0px 0px #ffffffe7;
+}
+
+.color:hover{
+background: #8bd1d0c4;
+}
+
+.color:active{
+box-shadow: 0px 2px 0px 0px #ffffffe7;
+}
+
+
+
+
+.colordos {
+  background:  #000000 ;
+  box-shadow: 0px 3px 0px 0px #ffffffe7;
+  width: 15%;
+}
+.margin {
+  margin: 50px 0 0 800px;
+}
+
+
+.sobre-nosotros{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h4{
+  text-align: center;
+  font-size: 100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.integrantes{
+  width: 33%;
+  display:flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.integrantes img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.integrantes img:hover{
+  background-color: #000000;
+  
+}
+
+@media (max-width:768px){
+  .integrantes{
+    width: 100%;
+  }
+}
+
+
+/** MODAL**/
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+} 
+
+#modalformulario:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.equis{
+  margin: 0; 
+}
+.formulario {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+  position: relative;
+  background-color: #159895;
+}
+.formulario__titulo {
+  text-align: center;
+  margin-top: 0;
+  color: rgba(0,0,0,0.7);
+}
+.formulario__input, .formulario__label, .formulario__submit {
+  z-index: -1;
+  display: block;
+  width: 90%;
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+.formulario__input {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+}
+.formulario__input:focus {
+  outline: 1px solid rgba(0,0,0,0.7);
+}
+.formulario__input:focus + .formulario__label{
+  margin-top: -135px;
+}
+.formulario__label {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: 1;
+  color: #000000;
+  transition: all 0.2s;
+  font-size: 1em;
+}
+.formulario__submit {
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
+}
+.fijar {
+  margin-top: -135px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form {
+  max-width: 600px; /* ajusta este valor a tu preferencia */
+  margin: 0 auto;
+}
+
+input[type="button"] {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
